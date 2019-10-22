@@ -29,6 +29,7 @@ let {magical, power} = wizard;
 console.log(magical, power);
 
 let ranger ={magical: false, power: 9};
+//if we redeclared variables we need to take all statment in ()
 ({magical, power} = ranger);
 
 
