@@ -1,5 +1,26 @@
 
+import { students, total } from './students';
+import { add } from './calculator';
+import multiply from './calculator';
+import Entity from './entity';
 
+
+class Hobbit extends Entity {
+	constructor(name, height){
+		super(name, height);
+	}
+}
+
+let Frodo = new Hobbit('Frodo Baggins', 4.5);
+
+console.log('frodo:', Frodo);
+Frodo.greet();
+
+
+console.log(add(8,8));
+console.log(multiply(8,8));
+
+console.log(`imported students: ${students} total students is ${total}`);
 // distruction assignment with arrays
 
 // let c =[100, 200];
