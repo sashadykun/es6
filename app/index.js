@@ -37,6 +37,8 @@
 
 // Arrow functions do not bind their own this.
 
+// .map helper method
+
 let poins = [10, 20, 30];
 // we need to add one on each point
 
@@ -54,3 +56,33 @@ const scale = (multiple) => {
 // const scale = multiple => lengths.map(n => n*multiple);
 
 console.log(scale(multiple));
+
+//--------------------------------------------------------------
+
+// .filter helper method
+
+// let isPassing = grade => {
+// 	return grade >=70;
+// }
+
+let scores = [80, 75, 45, 73, 56, 37, 89, 47];
+
+let passing = scores.filter(element => element >=70);
+
+console.log('passing', passing);
+// will return new array with values passes the callback function conditions;
+
+const averages = [6, 15.7, 9, 18, 22.1, 9.2, 4];
+
+const highlight = averages.filter(points => points > 15);
+
+
+console.log('highlight', highlight);
+
+//----------------------------------------------------------------
+
+// .find() returns a value in an array that passes a given test
+// .forEach(), similar to map calls a function for each array element.
+// .reduce(), .some(), .keys(), .values()...
+//-------------------------------------------------------------------
+
