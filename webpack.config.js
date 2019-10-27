@@ -10,6 +10,7 @@ module.exports = {
 		port: 3000,
 		contentBase: path.resolve(__dirname, 'build')
 	},
+	//configure babel-loader
 	module: {
 		rules: [
 			{
